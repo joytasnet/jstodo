@@ -1,0 +1,113 @@
+/* main.css */
+
+/* 基本スタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+/* Todo入力セクション */
+#todoContainer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+#todoContainer label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#todoInput {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#importance {
+    margin-top: 5px;
+}
+
+#addBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background-color: #45a049;
+}
+
+/* Todoリストスタイル */
+#todoList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+#todoList li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 重要度別の色付け */
+#todoList li span {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#todoList li span.finished {
+    text-decoration: line-through;
+    color: #888;
+}
+
+button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+button:nth-child(2) {
+    background-color: #2196F3;
+}
+
+button:nth-child(2):hover {
+    background-color: #1976D2;
+}

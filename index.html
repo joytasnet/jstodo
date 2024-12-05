@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODO List</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <h1>TODO List</h1>
+        <section id="todoContainer">
+            <label>Todo:<input type="text" id="todoInput" placeholder="Enter todo"></label>
+            <label>重要度:
+                <select id="importance">
+                    <option value="5">*****</option>
+                    <option value="4">****</option>
+                    <option value="3" selected>***</option>
+                    <option value="2">**</option>
+                    <option value="1">*</option>
+                </select>
+            </label>
+            <button id="addBtn">追加</button>
+        </section>
+        <ul id="todoList"></ul>
+    </body>
+</html>
