@@ -73,41 +73,48 @@ h1 {
     padding: 10px;
     margin-bottom: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start ;
     align-items: center;
+    gap:5px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* 重要度別の色付け */
-#todoList li span {
-    flex-grow: 1;
-    margin-right: 10px;
+#todoList li span:first-child{
+    margin-right:auto;
 }
 
+/* 完了したTodoのスタイル */
 #todoList li span.finished {
     text-decoration: line-through;
     color: #888;
 }
 
+/* Todoのテキストは左寄せ */
+#todoList li span.todoText {
+    flex-grow: 1;
+    text-align: left;
+}
+
+/* ボタンのスタイル */
 button {
-    background-color: #f44336;
+    background-color: #198754;
     color: white;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 5px;
+    min-width:47px;
 }
 
 button:hover {
-    background-color: #d32f2f;
+    background-color: #13653f;
 }
 
-button:nth-child(2) {
-    background-color: #2196F3;
+button:nth-of-type(2) {
+    background-color: #dc3545;
 }
 
-button:nth-child(2):hover {
-    background-color: #1976D2;
+button:nth-of-type(2):hover {
+    background-color: #bb2d3b;
 }
