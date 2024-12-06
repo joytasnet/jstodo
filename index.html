@@ -10,17 +10,17 @@
     <body>
         <h1>Todo List</h1>
         <section id="todoContainer">
-            <label>Todo:<input type="text" id="todoInput" placeholder="Enter todo"></label>
-            <label>重要度:
-                <select id="importance">
-                    <option value="5">★★★★★</option>
-                    <option value="4">★★★★</option>
-                    <option value="3" selected>★★★</option>
-                    <option value="2">★★</option>
-                    <option value="1">★</option>
-                </select>
-            </label>
-            <button id="addBtn">追加</button>
+            <input type="text" id="todoInput" placeholder="Todoを入力">
+        
+            <select id="importance">
+                <option value="0" disabled selected>重要度を選択</option>
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★</option>
+                <option value="3">★★★</option>
+                <option value="2">★★</option>
+                <option value="1">★</option>
+            </select>
+            
         </section>
         <ul id="todoList"></ul>
     </body>
